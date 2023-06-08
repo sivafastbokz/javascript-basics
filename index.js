@@ -17,49 +17,49 @@ function Car(make, model, year) {
 
 const mycar = new Car('ford','v6',1998);
 const car1 = new Car("Nissan", "300ZX", 1992,);
-console.log(mycar);
-console.log(car1)
+//console.log(mycar);
+//console.log(car1)
 //dot notation
-console.log(mycar.make,car1.make)
+//console.log(mycar.make,car1.make)
 //bracket notation
-console.log(mycar["model"])
+//console.log(mycar["model"])
 
 //array
 let arr =[1,2,3,4,5,6,7,8,9,10]
 console.log(arr)
 //filler method
 let arr1 =arr.filter((arr)=>arr>5)
-console.log(arr1)
+//console.log(arr1)
 var arr2 =arr.filter((arr)=>arr < 5)
-console.log(arr2)
+//console.log(arr2)
 const arr3 = arr.filter(num => num % 2)
-console.log(arr3)
+//console.log(arr3)
 //map
 let array = [1,3,5,6,7,8,99,]
 let newarr = array.map(function(val,index){
   return {key:index,value:val*val}
 })
-console.log(newarr)
+//console.log(newarr)
 //map has method
 var mymap = new Map()
 mymap.set(1998,'ford')
 mymap.set(1995,'bmw')
 mymap.set(1991,'audi')
-console.log(mymap.has(1998))
-console.log(mymap.has('mdm'))
+//console.log(mymap.has(1998))
+//console.log(mymap.has('mdm'))
 //map.entries
 let mapobj=mymap.entries();
-console.log(mapobj)
+//console.log(mapobj)
 //map.get
-console.log(mymap.get(1998))
+//console.log(mymap.get(1998))
 //map.key
-console.log(mymap.keys())
+//console.log(mymap.keys())
 //map.foreach
 mymap.forEach((val,index)=>{
-  console.log('values:',val + ', key:',index)
+ // console.log('values:',val + ', key:',index)
 })
 //map.delete
-console.log(mymap.delete(1998))
+//console.log(mymap.delete(1998))
 
 
 // what is array of object?
@@ -83,10 +83,10 @@ const userlist =[{
 ]
 // Looping through an Array of Objects
 // we are going to use the map method to loop through an array of objects.
-userlist.map((value)=>{
-  for(let property in value)
-  console.log(`${property}: ${value[property]}` )
-})
+//userlist.map((value)=>{
+  //for(let property in value)
+ // console.log(`${property}: ${value[property]}` )
+//})
 for(var key in userlist){
   // console.log(userlist[key],'siva')
 }
@@ -150,9 +150,9 @@ const list =[
 		]
 }]
 const firstbatter = list[0].batters.batter[list[0].batters.batter.length-1]
-console.log(firstbatter.id)
+//console.log(firstbatter.id)
 const lastTopping = list[0].topping[list[0].topping.length - 3];
-console.log(lastTopping.type);
+//console.log(lastTopping.type);
 
 const megaobj=[
 	{
@@ -260,8 +260,72 @@ var data=30//undefined
 //Undefined: undefined
 
 // var date2 = 
-console.log(4 == '4')
-console.log(4 === '4')
+//console.log(4 == '4')
+//console.log(4 === '4')
 
 // console.log(typeof null)
 
+//functions
+//The code inside the function will execute when "something" invokes (calls) the function:
+
+//When an event occurs (when a user clicks a button)
+//When it is invoked (called) from JavaScript code
+//Automatically (self invoked)
+
+function myfun(a,b){
+	return 2*4
+}
+ console.log(myfun())
+
+ let x =ber(2,3)
+function ber(a,b){
+	return a*b
+}
+console.log(x)
+
+const great = (a,b) =>{
+        if(b>a)
+		return	'b is greater'
+		else
+		return 'a is greater'
+}
+console.log(great(2,3))
+
+
+function mysun(dosa,idle,poori){
+      return dosa+idle+poori
+}
+console.log(mysun( 99,55,55))
+
+function calFahrenheit(cel) {
+	return (cel*9/5)+32; //Conversion formula
+  }
+  
+//   console.log(calFahrenheit(0)) 
+//   console.log(calFahrenheit(20)) 
+//   console.log(calFahrenheit(40)) 
+
+
+function reversenumber(n){
+	n=n + "";
+	return n.split("").reverse().join("");
+}
+// console.log(reversenumber(45782))
+
+
+function cal(totalmark=50){
+	if(totalmark<50){
+		return 'fail'
+	}else
+	return 'pass'
+}
+// console.log(cal(50))
+
+function calculator(a,b,c){
+	return a+b+c
+}
+console.log(calculator(2,2,2))
+ 
+const arrow = () =>{
+        
+}
