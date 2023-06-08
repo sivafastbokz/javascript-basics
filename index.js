@@ -154,10 +154,6 @@ console.log(firstbatter.id)
 const lastTopping = list[0].topping[list[0].topping.length - 3];
 console.log(lastTopping.type);
 
-
-
-
-
 const megaobj=[
 	{
 		"id": "0001",
@@ -228,4 +224,44 @@ const megaobj=[
 // console.log(middleindex.type,'siva')
 
 const Glazed=megaobj[2].topping[megaobj[2].topping.length-3]
-console.log(Glazed.id,'siva')
+// console.log(Glazed.id,'siva')
+
+//let const var
+
+//var // global scope
+var number = 50
+function print() {
+  var square = number * number
+//   console.log(square)
+}
+
+// console.log(number) // 50s
+
+print()//2500
+
+//The var keyword allows for redeclaration.//let const connot redeclare.
+
+// const number = 50
+// console.log(number) // 50
+
+// const number = 100
+// console.log(number) // 100
+
+//reassignment// var and let key allows you to reassing the vlaue whereas the const key won't
+var nissan = 10 
+nissan=20
+// console.log(nissan)
+//hosting
+// console.log(data)
+var data=30//undefined
+
+
+//Null: Object 
+//Undefined: undefined
+
+// var date2 = 
+console.log(4 == '4')
+console.log(4 === '4')
+
+// console.log(typeof null)
+
