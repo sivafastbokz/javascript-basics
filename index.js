@@ -329,3 +329,25 @@ console.log(calculator(2,2,2))
 const arrow = () =>{
         
 }
+
+//data types
+
+//strings 
+const name = 'ram';
+const name1 = "hari";
+const result = `The names are ${name} and ${name1}`;
+//numbers
+const number1 = 3;
+const number2 = 3.433;
+const number3 = 3e5 
+// BigInt value
+const value1 = 900719925124740998n;
+//Boolean
+const dataChecked = true;
+const valueCounted = false;
+//symbol
+const value2 = Symbol('hello');
+console.log(value2)
+
+//What is an Event ? JavaScript's interaction with HTML is handled through events that occur when the user or the browser manipulates a page. 
+//When the page loads, it is called an event. When the user clicks a button, that click too is an event.
